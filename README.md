@@ -1,2 +1,2 @@
-# react_redux_next_gql_ts_boiler
-react_redux_next_gql_boiler
+# react_apollo_next_ts_boiler
+react_apollo_next_ts_boiler
