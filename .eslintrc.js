@@ -14,7 +14,7 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "off",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "semicolon": [true, "never"],
+        "semicolon": [false, "never"],
         "quotemark": [true, "single"],
         "indent": [true, "spaces", 2],
         "object-literal-sort-keys": false,

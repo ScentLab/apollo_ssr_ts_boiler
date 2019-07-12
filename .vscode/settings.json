@@ -1,3 +1,7 @@
 {
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "prettier.semi": false,
+  "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "editor.acceptSuggestionOnCommitCharacter": false
 }

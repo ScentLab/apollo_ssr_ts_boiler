@@ -12,10 +12,7 @@
         }],
         ["module-resolver", {
             "root": ["./src"],
-            "alias": {
-                "~": "./src",
-                "~~": "./src/services"
-            }
-        }]
+        }],
+        ["babel-plugin-styled-components"]
     ]
 }
