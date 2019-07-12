@@ -11,6 +11,6 @@ export default class extends Document {
           <NextScript />
         </body>
       </html>
-    );
+    )
   }
 }

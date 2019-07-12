@@ -1,10 +1,11 @@
-const withOptimizedImages = require('next-optimized-images');
-const withTypescript = require('@zeit/next-typescript');
+const withTypescript = require('@zeit/next-typescript')
+const withCSS = require('@zeit/next-css')
 
-module.exports = withOptimizedImages(
-  withTypescript({
-    target: 'serverless',
-    distDir: '../dist',
-    imagesName: '[hash].[ext]',
-  }),
-);
+module.exports = withTypescript(
+  withCSS({
+    webpack(config) {
+      return config
+    },
+    cssModules: true,
+  })
+)
