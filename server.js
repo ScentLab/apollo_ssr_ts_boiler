@@ -17,7 +17,8 @@ const server = express();
 
 const createServer = async () => {
   app.prepare();
-  server.use(express.static('static'));
+  
+  server.use(express.static('public'));
   server.use(bodyParser.json());
   server.use(
     bodyParser.urlencoded({
@@ -26,7 +27,7 @@ const createServer = async () => {
   );
 
   server.use((req, res) => app.render(req, res, req._parsedUrl.pathname, req.query));
-
+  
   return server;
 }
 
