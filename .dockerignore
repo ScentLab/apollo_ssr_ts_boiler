@@ -1,10 +1,13 @@
 node_modules/
 
 .next
+build
 dist
 
 .DS_Store
 .serverless
 
+.env.dev
 .env.development
+.env.prod
 .env.production

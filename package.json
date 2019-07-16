@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "npx dotenv-cli -e .env.prod -- next start ./build",
+    "start": "next start ./build",
     "dev": "npx dotenv-cli -e .env.dev -- node ./server.js",
     "build": "npx dotenv-cli -e .env.prod -- npx rimraf ./build && next build ./src",
     "build:debug": "npx dotenv-cli -e .env.dev -- npx rimraf ./build && next build ./src",
