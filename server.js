@@ -8,16 +8,12 @@ const config = require('./next.config');
 const dev = process.env.NODE_ENV !== 'production';
 const dir = path.resolve(__dirname, './src');
 const port = process.env.PORT ? process.env.PORT : 3000;
-const app = next({
-  config,
-  dev,
-  dir,
-});
+const app = next({config,dev,dir});
 const server = express();
 
 const createServer = async () => {
   app.prepare();
-  
+
   server.use(express.static('public'));
   server.use(bodyParser.json());
   server.use(
@@ -27,13 +23,13 @@ const createServer = async () => {
   );
 
   server.use((req, res) => app.render(req, res, req._parsedUrl.pathname, req.query));
-  
+
   return server;
 }
 
-const runServer = async () => {
+const run = async () => {
   const server = await createServer();
   server.listen(port);
 }
 
-runServer();
+run();

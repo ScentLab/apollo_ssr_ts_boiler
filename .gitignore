@@ -65,4 +65,6 @@ dist
 .serverless
 
 .env.development
+.env.dev
 .env.production
+.env.prod

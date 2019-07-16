@@ -15,9 +15,9 @@ function printUsage() {
 }
 
 function errorCheck() {
-    if [[ $? -ne 0 ]]; then
+    if [[ $? -ne 0 ]]; then 
     exit 1
-fi
+    fi
 }
 
 if [[ -z ${AWS_PROFILE} ]]; then
@@ -25,7 +25,7 @@ if [[ -z ${AWS_PROFILE} ]]; then
   exit 1
 fi
 
-npm run build-production
+yarn build
 errorCheck
 
 docker build -t ${IMAGE_NAME} .

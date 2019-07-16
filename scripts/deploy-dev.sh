@@ -15,7 +15,7 @@ function errorCheck() {
 
 set -e
 
-yarn build
+yarn build:debug
 errorCheck
 
 docker build -t ${IMAGE_NAME} .

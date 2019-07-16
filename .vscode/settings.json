@@ -1,6 +1,18 @@
 {
   "editor.tabSize": 2,
-  "prettier.semi": false,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
   "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
   "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
   "editor.acceptSuggestionOnCommitCharacter": false
