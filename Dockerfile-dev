@@ -9,6 +9,6 @@ WORKDIR /home
 
 RUN npm install -g yarn
 
-COPY build ./src/.next
+COPY build ./build
 
 CMD ["sh", "-c", "yarn start:debug"]
