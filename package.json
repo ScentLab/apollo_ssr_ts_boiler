@@ -15,9 +15,10 @@
     "deploy:debug": "npx dotenv-cli -e .env.dev -- sh ./scripts/deploy-dev.sh input_aws_profile_name",
     "generate": "npx graphql-codegen --config codegen.yml",
     "generate:pre": "npx graphql-cli --dotenv .env.dev get-schema",
-    "test:unit": "jest",
-    "test:e2e": "cypress",
-    "test:all": "yarn test:unit && yarn test:e2e"
+    "jest": "jest",
+    "cypress": "cypress run",
+    "cypress:open": "cypress open",
+    "test:all": "yarn jest && yarn cypress"
   },
   "dependencies": {
     "apollo-cache-inmemory": "^1.6.2",
