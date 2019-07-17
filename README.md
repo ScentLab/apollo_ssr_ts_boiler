@@ -1,4 +1,6 @@
 # apollo_ssr_ts_boiler
+
+It's Free! 
  
 ### Languages
 
@@ -15,10 +17,10 @@
 
 ### PWA Score( Production, Light house )
 
-Performence: 86 / 100  
-Accessibility: 100 / 100  
-Best Practices: 86 / 100  
-SEO: 100 / 100  
+* Performence: 86 / 100  
+* Accessibility: 100 / 100  
+* Best Practices: 86 / 100  
+* SEO: 100 / 100  
 
 ### State Managment
 
