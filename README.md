@@ -26,7 +26,7 @@ SEO: 100 / 100
 
 ### API Call
 
-* Graphql( + Hooks )
+* Apollo Client with Graphql( + Hooks )
 
 ### Graphql Schema Generate
 
