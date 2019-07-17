@@ -9,6 +9,4 @@ WORKDIR /home
 
 RUN npm install -g yarn
 
-COPY build ./build
-
-CMD ["sh", "-c", "yarn start"]
+CMD ["sh", "-c", "yarn dev"]

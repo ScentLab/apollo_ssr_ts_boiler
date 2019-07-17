@@ -7,7 +7,7 @@ services:
       - VIRTUAL_HOST={your-host-name(url)}
       - VIRTUAL_PORT=5000
       - LETSENCRYPT_HOST={your-host-name(url)}
-      - LETSENCRYPT_EMAIL={your-email}
+      - LETSENCRYPT_EMAIL=gmj1197@gmail.com
     networks:
       - nginx-proxy
 
